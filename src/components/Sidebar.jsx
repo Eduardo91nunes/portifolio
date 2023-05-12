@@ -1,7 +1,7 @@
-import Foto from '../img/perfil.png'
+import Foto from '../img/perfil.png';
 
 import '../styles/components/sidebar.sass';
-import SocialNetwork from './SocialNetwork';
+import SocialNetworks from './SocialNetworks';
 
 const Sidebar = () => {
     return (
@@ -9,14 +9,14 @@ const Sidebar = () => {
         
         <p className="title">Desenvolvedor Front-end jr</p>
         <SocialNetwork />
-        <p>Informações de contato</p>
+        <InformationConteiner />
         <a href="" className="btn">
             Download curriculo
         </a>
 
        </aside>
-    )
-}
+    );
+};
 
 
-export default Sidebar
+export default Sidebar;
