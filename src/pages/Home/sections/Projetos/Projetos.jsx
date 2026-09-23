@@ -13,7 +13,7 @@ export default function Projetos() {
         <span className="rotulo-secao">Projetos</span>
         <p className="projetos__intro">
           Cada projeto abaixo tem um repositório público no GitHub. Clique no
-          card para abrir um protótipo interativo — uma recriação da
+          card para abrir um protótipo interativo uma recriação da
           interface real, pensada para mostrar a experiência sem precisar
           rodar o projeto localmente.
         </p>
