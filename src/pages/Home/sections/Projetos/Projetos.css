@@ -1,0 +1,12 @@
+.projetos__intro {
+  max-width: 56ch;
+  color: var(--cor-tinta-suave);
+  font-size: var(--tam-md);
+  margin-bottom: var(--esp-10);
+}
+
+.projetos__grade {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+  gap: var(--esp-6);
+}

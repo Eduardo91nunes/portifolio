@@ -1,0 +1,116 @@
+.agro-demo {
+  display: flex;
+  flex-direction: column;
+  gap: var(--esp-6);
+}
+
+.agro-demo__legenda {
+  font-size: var(--tam-sm);
+  color: var(--cor-tinta-suave);
+  max-width: 40rem;
+}
+
+.agro-demo__corpo {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: var(--esp-6);
+  align-items: start;
+}
+
+@media (max-width: 640px) {
+  .agro-demo__corpo { grid-template-columns: 1fr; }
+}
+
+.agro-demo__mapa {
+  width: 100%;
+  background: var(--cor-fundo-elevado);
+  border: 1px solid var(--cor-linha);
+  border-radius: var(--raio-ficha);
+}
+
+.agro-demo__talhao {
+  fill: color-mix(in srgb, var(--cor-secundaria) 30%, transparent);
+  stroke: var(--cor-secundaria);
+  stroke-width: 1;
+  cursor: pointer;
+  transition: fill var(--duracao-rapida) var(--curva);
+}
+
+.agro-demo__talhao:hover {
+  fill: color-mix(in srgb, var(--cor-secundaria) 50%, transparent);
+}
+
+.agro-demo__talhao.is-ativo {
+  fill: color-mix(in srgb, var(--cor-primaria) 55%, transparent);
+  stroke: var(--cor-primaria);
+  stroke-width: 2;
+}
+
+.agro-demo__painel h4 {
+  font-size: var(--tam-md);
+  margin-bottom: var(--esp-4);
+}
+
+.agro-demo__painel h4 span {
+  font-family: var(--fonte-corpo);
+  font-weight: 400;
+  color: var(--cor-tinta-suave);
+  font-size: var(--tam-sm);
+}
+
+.agro-demo__kpis {
+  display: flex;
+  flex-direction: column;
+  gap: var(--esp-2);
+}
+
+.agro-demo__kpi {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--esp-2) var(--esp-3);
+  background: var(--cor-fundo-elevado);
+  border: 1px solid var(--cor-linha);
+  border-radius: var(--raio-ficha);
+  font-size: var(--tam-sm);
+}
+
+.agro-demo__kpi-valor {
+  font-family: var(--fonte-mono);
+  color: var(--cor-primaria);
+}
+
+.agro-demo__construtor {
+  border-top: 1px dashed var(--cor-linha);
+  padding-top: var(--esp-4);
+}
+
+.agro-demo__construtor-titulo {
+  font-family: var(--fonte-mono);
+  font-size: var(--tam-xs);
+  color: var(--cor-tinta-suave);
+  text-transform: lowercase;
+}
+
+.agro-demo__construtor-linha {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--esp-2);
+  margin-top: var(--esp-2);
+  font-family: var(--fonte-mono);
+  font-size: var(--tam-sm);
+}
+
+.agro-demo__construtor-linha select {
+  padding: var(--esp-1) var(--esp-2);
+  border-radius: var(--raio-ficha);
+  border: 1px solid var(--cor-linha);
+  background: var(--cor-card);
+  color: var(--cor-tinta);
+  font-family: inherit;
+}
+
+.agro-demo__construtor-linha strong {
+  color: var(--cor-primaria);
+  font-size: var(--tam-md);
+}

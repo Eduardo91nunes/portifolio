@@ -1,0 +1,100 @@
+.hero {
+  padding-top: var(--esp-16);
+  padding-bottom: var(--esp-24);
+  display: flex;
+  flex-direction: column;
+  gap: var(--esp-8);
+  white-space: pre-line;
+}
+
+.hero__linha-campo {
+  display: flex;
+  gap: var(--esp-6);
+  flex-wrap: wrap;
+  font-family: var(--fonte-mono);
+  font-size: var(--tam-xs);
+  color: var(--cor-tinta-suave);
+  opacity: 0;
+  animation: entra-campo 640ms var(--curva) forwards;
+  animation-delay: 500ms;
+}
+
+.hero__titulo {
+  font-size: var(--tam-xxl);
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+  display: flex;
+  flex-direction: column;
+  max-width: 22ch;
+}
+
+.hero__linha {
+  display: block;
+  overflow: hidden;
+}
+
+.hero__linha::before {
+  content: '';
+}
+
+.hero__titulo .hero__linha {
+  opacity: 0;
+  transform: translateY(100%);
+  animation: entra-linha 720ms var(--curva) forwards;
+}
+
+.hero__titulo .hero__linha:nth-child(1) { animation-delay: 60ms; }
+.hero__titulo .hero__linha:nth-child(2) { animation-delay: 180ms; }
+
+.hero__bio {
+  max-width: 46ch;
+  font-size: var(--tam-md);
+  color: var(--cor-tinta-suave);
+  opacity: 0;
+  animation: entra-campo 640ms var(--curva) forwards;
+  animation-delay: 380ms;
+}
+
+.hero__acoes {
+  display: flex;
+  align-items: center;
+  gap: var(--esp-6);
+  opacity: 0;
+  animation: entra-campo 640ms var(--curva) forwards;
+  animation-delay: 620ms;
+}
+
+.hero__botao {
+  background: var(--cor-primaria);
+  color: var(--cor-card);
+  text-decoration: none;
+  padding: var(--esp-3) var(--esp-6);
+  border-radius: var(--raio-ficha);
+  font-size: var(--tam-sm);
+  font-weight: 600;
+  transition: transform var(--duracao-rapida) var(--curva);
+}
+
+.hero__botao:hover {
+  transform: translateY(-2px);
+}
+
+.hero__link {
+  text-decoration: none;
+  color: var(--cor-tinta-suave);
+  font-size: var(--tam-sm);
+  border-bottom: 1px solid var(--cor-linha);
+}
+
+.hero__link:hover {
+  color: var(--cor-primaria);
+  border-color: var(--cor-primaria);
+}
+
+@keyframes entra-linha {
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes entra-campo {
+  to { opacity: 1; }
+}

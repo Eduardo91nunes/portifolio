@@ -1,0 +1,68 @@
+.contato {
+  border-bottom: none;
+}
+
+.contato__grade {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: var(--esp-16);
+  align-items: start;
+}
+
+@media (max-width: 720px) {
+  .contato__grade { grid-template-columns: 1fr; gap: var(--esp-8); }
+}
+
+.contato__titulo {
+  font-size: var(--tam-xl);
+  max-width: 18ch;
+}
+
+.contato__lista {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.contato__lista li {
+  border-bottom: 1px solid var(--cor-linha);
+}
+
+.contato__lista a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: var(--esp-4);
+  text-decoration: none;
+  transition: color var(--duracao-rapida) var(--curva);
+}
+
+.contato__lista a:hover {
+  color: var(--cor-primaria);
+}
+
+.contato__rotulo {
+  font-family: var(--fonte-mono);
+  font-size: var(--tam-sm);
+  color: var(--cor-tinta-suave);
+}
+
+.contato__icone {
+  width: 1.25rem;
+  height: 1.25rem;
+  transition: transform var(--duracao-rapida) var(--curva);
+}
+
+.contato__lista a:hover .contato__icone {
+  transform: translateX(3px);
+}
+
+/* Cor oficial de cada marca (fill="currentColor" no SVG lê o `color` daqui) */
+.contato__lista a[data-rede='WhatsApp'] .contato__icone { color: #25d366; }
+.contato__lista a[data-rede='LinkedIn'] .contato__icone { color: #0a66c2; }
+.contato__lista a[data-rede='Instagram'] .contato__icone { color: #e4405f; }
+
+.contato__lista a[data-rede='GitHub'] .contato__icone { color: #181717; }
+[data-tema='noite'] .contato__lista a[data-rede='GitHub'] .contato__icone { color: #f0f6fc; }

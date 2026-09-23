@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Public+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap');
+@import './tokens.css';
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: var(--cor-fundo);
+  color: var(--cor-tinta);
+  font-family: var(--fonte-corpo);
+  font-size: var(--tam-base);
+  line-height: 1.6;
+  transition: background-color var(--duracao-media) var(--curva), color var(--duracao-media) var(--curva);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3 {
+  font-family: var(--fonte-display);
+  font-weight: 600;
+  margin: 0;
+  color: var(--cor-tinta);
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+img, svg {
+  max-width: 100%;
+  display: block;
+}
+
+.envelope {
+  width: min(100% - 2.5rem, var(--largura-conteudo));
+  margin-inline: auto;
+}
+
+.secao {
+  padding-block: var(--esp-24);
+  border-bottom: 1px solid var(--cor-linha);
+}
+
+.rotulo-secao {
+  font-family: var(--fonte-mono);
+  font-size: var(--tam-sm);
+  color: var(--cor-primaria);
+  display: flex;
+  align-items: baseline;
+  gap: var(--esp-3);
+  margin-bottom: var(--esp-6);
+}
+
+
+
+:focus-visible {
+  outline: 2px solid var(--cor-primaria);
+  outline-offset: 3px;
+}
+
+::selection {
+  background: var(--cor-primaria);
+  color: var(--cor-card);
+}

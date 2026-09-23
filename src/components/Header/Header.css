@@ -1,0 +1,43 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  background: color-mix(in srgb, var(--cor-fundo) 88%, transparent);
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid var(--cor-linha);
+}
+
+.header__conteudo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--esp-6);
+  padding-block: var(--esp-4);
+}
+
+.header__marca {
+  font-family: var(--fonte-display);
+  font-size: var(--tam-md);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.header__nav {
+  display: flex;
+  gap: var(--esp-6);
+  font-size: var(--tam-sm);
+}
+
+.header__nav a {
+  text-decoration: none;
+  color: var(--cor-tinta-suave);
+  transition: color var(--duracao-rapida) var(--curva);
+}
+
+.header__nav a:hover {
+  color: var(--cor-primaria);
+}
+
+@media (max-width: 640px) {
+  .header__nav { display: none; }
+}

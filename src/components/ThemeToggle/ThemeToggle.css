@@ -1,0 +1,40 @@
+.theme-toggle {
+  display: flex;
+  align-items: center;
+  gap: var(--esp-2);
+  background: transparent;
+  border: 1px solid var(--cor-linha);
+  border-radius: 999px;
+  padding: var(--esp-1) var(--esp-3);
+  color: var(--cor-tinta-suave);
+}
+
+.theme-toggle__trilho {
+  width: 1.75rem;
+  height: 1rem;
+  border-radius: 999px;
+  background: var(--cor-fundo-elevado);
+  border: 1px solid var(--cor-linha);
+  position: relative;
+  display: inline-block;
+}
+
+.theme-toggle__marcador {
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 50%;
+  background: var(--cor-primaria);
+  transition: transform var(--duracao-media) var(--curva);
+}
+
+[data-tema='noite'] .theme-toggle__marcador {
+  transform: translateX(0.75rem);
+}
+
+.theme-toggle__texto {
+  font-family: var(--fonte-mono);
+  font-size: var(--tam-xs);
+}

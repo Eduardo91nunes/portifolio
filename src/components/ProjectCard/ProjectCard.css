@@ -1,0 +1,79 @@
+.project-card {
+  background: var(--cor-card);
+  border: 1px solid var(--cor-linha);
+  border-radius: var(--raio-ficha);
+  box-shadow: var(--sombra-ficha);
+  padding: var(--esp-6);
+  display: flex;
+  flex-direction: column;
+  gap: var(--esp-3);
+  position: relative;
+  transition: transform var(--duracao-media) var(--curva), border-color var(--duracao-media) var(--curva);
+}
+
+.project-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--cor-primaria);
+}
+
+.project-card__aba {
+  align-self: flex-start;
+  font-family: var(--fonte-mono);
+  font-size: var(--tam-xs);
+  color: var(--cor-primaria);
+  border: 1px solid var(--cor-primaria);
+  border-radius: 999px;
+  padding: 0.15rem 0.65rem;
+}
+
+.project-card__nome {
+  font-size: var(--tam-lg);
+}
+
+.project-card__resumo {
+  color: var(--cor-tinta-suave);
+  font-size: var(--tam-sm);
+  flex-grow: 1;
+}
+
+.project-card__stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--esp-2);
+}
+
+.project-card__acoes {
+  display: flex;
+  align-items: center;
+  gap: var(--esp-4);
+  flex-wrap: wrap;
+}
+
+.project-card__botao {
+  background: none;
+  border: none;
+  border-bottom: 1px solid var(--cor-primaria);
+  color: var(--cor-primaria);
+  padding: 0;
+  font-size: var(--tam-sm);
+  font-weight: 600;
+}
+
+.project-card__link-repo {
+  font-size: var(--tam-sm);
+  color: var(--cor-tinta-suave);
+  text-decoration: none;
+  border-bottom: 1px solid var(--cor-linha);
+}
+
+.project-card__link-repo:hover {
+  color: var(--cor-primaria);
+  border-color: var(--cor-primaria);
+}
+
+.project-card__nota {
+  font-family: var(--fonte-mono);
+  font-size: 0.7rem;
+  color: var(--cor-tinta-suave);
+  opacity: 0.8;
+}

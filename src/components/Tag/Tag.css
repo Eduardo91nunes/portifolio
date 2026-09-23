@@ -1,0 +1,9 @@
+.tag {
+  font-family: var(--fonte-mono);
+  font-size: var(--tam-xs);
+  color: var(--cor-tinta-suave);
+  border: 1px solid var(--cor-linha);
+  border-radius: var(--raio-ficha);
+  padding: 0.15rem 0.5rem;
+  line-height: 1.5;
+}

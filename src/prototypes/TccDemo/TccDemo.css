@@ -1,0 +1,76 @@
+.tcc-demo {
+  display: flex;
+  flex-direction: column;
+  gap: var(--esp-4);
+}
+
+.tcc-demo__legenda {
+  font-size: var(--tam-sm);
+  color: var(--cor-tinta-suave);
+  max-width: 40rem;
+}
+
+.tcc-demo__busca {
+  padding: var(--esp-2) var(--esp-3);
+  border-radius: var(--raio-ficha);
+  border: 1px solid var(--cor-linha);
+  background: var(--cor-card);
+  color: var(--cor-tinta);
+  font-family: var(--fonte-corpo);
+  font-size: var(--tam-sm);
+  max-width: 16rem;
+}
+
+.tcc-demo__tabela {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--tam-sm);
+}
+
+.tcc-demo__tabela th {
+  text-align: left;
+  font-family: var(--fonte-mono);
+  font-size: var(--tam-xs);
+  color: var(--cor-tinta-suave);
+  border-bottom: 1px solid var(--cor-linha);
+  padding-bottom: var(--esp-2);
+}
+
+.tcc-demo__tabela td {
+  padding-block: var(--esp-2);
+  border-bottom: 1px solid var(--cor-linha);
+}
+
+.tcc-demo__tabela tr.is-baixo .tcc-demo__quantidade {
+  color: var(--cor-alerta);
+}
+
+.tcc-demo__quantidade {
+  font-family: var(--fonte-mono);
+}
+
+.tcc-demo__acoes {
+  display: flex;
+  gap: var(--esp-2);
+}
+
+.tcc-demo__acoes button {
+  border: 1px solid var(--cor-linha);
+  background: var(--cor-fundo-elevado);
+  color: var(--cor-tinta-suave);
+  border-radius: var(--raio-ficha);
+  padding: var(--esp-1) var(--esp-2);
+  font-size: var(--tam-xs);
+  font-family: var(--fonte-mono);
+}
+
+.tcc-demo__acoes button:hover {
+  border-color: var(--cor-primaria);
+  color: var(--cor-primaria);
+}
+
+.tcc-demo__vazio {
+  text-align: center;
+  color: var(--cor-tinta-suave);
+  padding: var(--esp-4);
+}

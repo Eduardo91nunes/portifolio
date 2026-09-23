@@ -1,0 +1,104 @@
+.sobre__grade {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr;
+  gap: var(--esp-16);
+}
+
+@media (max-width: 720px) {
+  .sobre__grade { grid-template-columns: 1fr; gap: var(--esp-8); }
+}
+
+.sobre__perfil {
+  display: flex;
+  gap: var(--esp-8);
+  align-items: flex-start;
+}
+
+@media (max-width: 560px) {
+  .sobre__perfil {
+    flex-direction: column;
+    gap: var(--esp-6);
+  }
+}
+
+.sobre__foto {
+  width: 9rem;
+  height: 11rem;
+  object-fit: cover;
+  border: 1px solid var(--cor-linha);
+  border-radius: var(--raio-ficha);
+  box-shadow: var(--sombra-ficha);
+  flex-shrink: 0;
+  background: var(--cor-fundo-elevado);
+}
+
+.sobre__paragrafos {
+  display: flex;
+  flex-direction: column;
+  gap: var(--esp-4);
+  font-size: var(--tam-md);
+  max-width: 62ch;
+}
+
+.sobre__competencias {
+  border-left: 1px solid var(--cor-linha);
+  padding-left: var(--esp-6);
+}
+
+@media (max-width: 720px) {
+  .sobre__competencias {
+    border-left: none;
+    border-top: 1px solid var(--cor-linha);
+    padding-left: 0;
+    padding-top: var(--esp-6);
+  }
+}
+
+.sobre__competencias-titulo {
+  display: flex;
+  font-family: var(--fonte-mono);
+  font-size: var(--tam-xs);
+  color: var(--cor-tinta-suave);
+  margin-bottom: var(--esp-3);
+  justify-content: center;
+}
+
+.sobre__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--esp-2);
+  justify-content: center;
+}
+
+.sobre__tech {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 1px solid var(--cor-linha);
+  border-radius: var(--raio-ficha);
+  background: var(--cor-card);
+  transition: border-color var(--duracao-rapida) var(--curva), transform var(--duracao-rapida) var(--curva);
+}
+
+.sobre__tech:hover {
+  border-color: var(--cor-primaria);
+  transform: translateY(-2px);
+}
+
+/* Cor oficial de cada marca (fill="currentColor" no SVG lê o `color` daqui) */
+.sobre__tech[data-tech='React'] { color: #61dafb; }
+.sobre__tech[data-tech='JavaScript'] { color: #f7df1e; }
+.sobre__tech[data-tech='CSS'] { color: #1572b6; }
+.sobre__tech[data-tech='HTML5'] { color: #e34f26; }
+.sobre__tech[data-tech='Git'] { color: #f05032; }
+.sobre__tech[data-tech='Vite'] { color: #646cff; }
+
+.sobre__tech[data-tech='GitHub'] { color: #181717; }
+[data-tema='noite'] .sobre__tech[data-tech='GitHub'] { color: #f0f6fc; }
+
+.sobre__tech-icone {
+  width: 1.25rem;
+  height: 1.25rem;
+}

@@ -1,0 +1,70 @@
+
+:root {
+  /* ---- Modo dia (padrão) ---- */
+  --cor-fundo: #f2eee3;
+  --cor-fundo-elevado: #ece5d3;
+  --cor-tinta: #23291f;
+  --cor-tinta-suave: #565c4d;
+  --cor-linha: #c9c0a8;
+  --cor-primaria: #a9542f;      /* argila queimada */
+  --cor-primaria-forte: #7f3d20;
+  --cor-secundaria: #4b6043;    /* verde lavoura */
+  --cor-alerta: #9c3b2f;
+  --cor-card: #faf7ef;
+  --sombra-ficha: 0 1px 0 var(--cor-linha), 0 10px 24px -18px rgba(35, 41, 31, 0.45);
+
+  /* ---- Tipografia ---- */
+  --fonte-display: 'Fraunces', 'Iowan Old Style', serif;
+  --fonte-corpo: 'Public Sans', -apple-system, sans-serif;
+  --fonte-mono: 'IBM Plex Mono', ui-monospace, monospace;
+
+  /* ---- Escala tipográfica ---- */
+  --tam-xs: 0.75rem;
+  --tam-sm: 0.875rem;
+  --tam-base: 1rem;
+  --tam-md: 1.125rem;
+  --tam-lg: 1.5rem;
+  --tam-xl: 2.25rem;
+  --tam-xxl: clamp(2.5rem, 5vw + 1rem, 4.5rem);
+
+  /* ---- Espaçamento ---- */
+  --esp-1: 0.25rem;
+  --esp-2: 0.5rem;
+  --esp-3: 0.75rem;
+  --esp-4: 1rem;
+  --esp-6: 1.5rem;
+  --esp-8: 2rem;
+  --esp-12: 3rem;
+  --esp-16: 4rem;
+  --esp-24: 6rem;
+
+  --raio-ficha: 3px;
+  --largura-conteudo: 72rem;
+  --duracao-rapida: 160ms;
+  --duracao-media: 320ms;
+  --curva: cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+/* ---- Modo noite: painel de instrumentos agrícola ---- */
+[data-tema='noite'] {
+  --cor-fundo: #10140f;
+  --cor-fundo-elevado: #171d13;
+  --cor-tinta: #e9e4d4;
+  --cor-tinta-suave: #a7ac97;
+  --cor-linha: #2b3326;
+  --cor-primaria: #c98a3d;      /* âmbar de instrumento */
+  --cor-primaria-forte: #e2a75c;
+  --cor-secundaria: #7fa06a;    /* fósforo verde */
+  --cor-alerta: #d97a63;
+  --cor-card: #141910;
+  --sombra-ficha: 0 1px 0 var(--cor-linha), 0 10px 28px -16px rgba(0, 0, 0, 0.6);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

@@ -1,0 +1,27 @@
+.footer {
+  padding-block: var(--esp-8);
+}
+
+.footer__conteudo {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--esp-4);
+  justify-content: space-between;
+  font-family: var(--fonte-mono);
+  font-size: var(--tam-xs);
+  color: var(--cor-tinta-suave);
+}
+
+.footer__links {
+  display: flex;
+  gap: var(--esp-4);
+}
+
+.footer__links a {
+  text-decoration: none;
+  color: var(--cor-tinta-suave);
+}
+
+.footer__links a:hover {
+  color: var(--cor-primaria);
+}
