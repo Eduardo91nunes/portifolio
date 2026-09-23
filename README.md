@@ -1,110 +1,176 @@
-# Portfólio — Eduardo Nunes
+# 💻 Portfólio — Eduardo Nunes
 
-Portfólio em React (Vite) + CSS puro, com protótipos interativos dos
-projetos (já que os repositórios reais são privados e não estão hospedados
-em lugar nenhum).
+Portfólio pessoal desenvolvido para apresentar minha trajetória profissional, experiências, habilidades e projetos desenvolvidos na área de tecnologia.
 
-## Rodando localmente
+O projeto foi construído com **React + Vite**, utilizando **CSS puro**, com foco em uma interface moderna, responsiva e organizada.
+
+## 🚀 Sobre o projeto
+
+Este portfólio foi desenvolvido como uma forma de centralizar minhas principais informações profissionais e apresentar, de maneira interativa, alguns dos projetos que desenvolvi ao longo da minha trajetória.
+
+Além das informações profissionais, o site possui **protótipos interativos** de projetos, permitindo que o visitante conheça parte das funcionalidades mesmo quando o projeto original não está disponível publicamente.
+
+## ✨ Funcionalidades
+
+* 📌 Apresentação profissional
+* 👨‍💻 Informações sobre experiência e formação
+* 🛠️ Listagem de habilidades e tecnologias
+* 📂 Seção de projetos
+* 🖥️ Protótipos interativos dos projetos
+* 🌓 Alternância entre tema claro e escuro
+* 📱 Interface responsiva
+* 💾 Persistência do tema escolhido utilizando `localStorage`
+* 📬 Seção de contato
+
+## 🛠️ Tecnologias utilizadas
+
+* **React**
+* **JavaScript**
+* **Vite**
+* **CSS3**
+* **HTML5**
+* **Git**
+* **GitHub**
+
+## 📁 Estrutura do projeto
+
+```text
+src/
+├── components/
+│   ├── Header/
+│   ├── Footer/
+│   ├── ThemeToggle/
+│   ├── ProjectCard/
+│   ├── ProjectModal/
+│   ├── Tag/
+│   └── Timeline/
+│
+├── context/
+│   └── ThemeContext.jsx
+│
+├── data/
+│   ├── profile.js
+│   ├── experience.js
+│   └── projects.js
+│
+├── pages/
+│   └── Home/
+│       ├── Home.jsx
+│       └── sections/
+│           ├── Hero/
+│           ├── Sobre/
+│           ├── Experiencia/
+│           ├── Projetos/
+│           └── Contato/
+│
+├── prototypes/
+│   ├── AgroPainelDemo/
+│   ├── IsotrianguloDemo/
+│   └── RegulaFacilDemo/
+│
+└── styles/
+    ├── tokens.css
+    └── globals.css
+```
+
+## 🖥️ Protótipos dos projetos
+
+Alguns dos projetos apresentados no portfólio possuem seus repositórios privados ou não possuem uma versão pública hospedada.
+
+Para permitir que os visitantes conheçam melhor esses trabalhos, foram desenvolvidos **protótipos interativos em React**.
+
+Os protótipos apresentam, de forma simplificada, algumas funcionalidades e conceitos das aplicações originais.
+
+> Os protótipos são demonstrações desenvolvidas exclusivamente para apresentação no portfólio e não representam necessariamente os sistemas completos.
+
+## 🎨 Temas
+
+O portfólio possui dois temas:
+
+* ☀️ **Tema claro**
+* 🌙 **Tema escuro**
+
+A preferência selecionada pelo usuário é armazenada no navegador utilizando `localStorage`.
+
+## 📱 Responsividade
+
+A interface foi desenvolvida para se adaptar a diferentes tamanhos de tela, proporcionando uma experiência adequada em:
+
+* 💻 Computadores
+* 📱 Smartphones
+* 📲 Tablets
+
+## ⚙️ Como executar o projeto
+
+### Pré-requisitos
+
+Antes de começar, você precisa ter instalado:
+
+* [Node.js](https://nodejs.org/)
+* npm
+
+### Instalação
+
+Clone o repositório:
+
+```bash
+git clone https://github.com/Eduardo91nunes/portifolio.git
+```
+
+Entre na pasta:
+
+```bash
+cd portifolio
+```
+
+Instale as dependências:
 
 ```bash
 npm install
+```
+
+Execute o projeto:
+
+```bash
 npm run dev
 ```
 
-Build de produção:
+O Vite disponibilizará o projeto localmente no endereço indicado pelo terminal.
+
+## 📦 Build de produção
+
+Para gerar a versão de produção:
 
 ```bash
 npm run build
-npm run preview   # serve o build em localhost para conferir
 ```
 
-## Onde editar cada coisa
+Para visualizar o build localmente:
 
-Tudo que é **conteúdo** fica isolado em `src/data/`, então dá para
-atualizar o site inteiro sem mexer em nenhum componente:
-
-- `src/data/profile.js` — nome, bio, disponibilidade e links de contato.
-  **Os textos aqui são placeholders** (marcados com `TODO`) — substitua
-  pelo conteúdo atualizado que você vai definir.
-- `src/data/experience.js` — experiências profissionais, formação,
-  certificações e a lista de competências. Também com placeholders.
-- `src/data/projects.js` — a lista de projetos exibidos na seção
-  "Projetos". Cada item aponta para um componente `Prototipo`.
-
-## Estrutura de pastas
-
-```
-src/
-  components/       componentes reutilizáveis (cada um com sua .css)
-    Header/
-    Footer/
-    ThemeToggle/    alternância entre o modo "papel" (claro) e "painel" (escuro)
-    ProjectCard/    a "ficha técnica" de cada projeto na grade
-    ProjectModal/   a janela que abre o protótipo interativo
-    Tag/
-    Timeline/
-  context/
-    ThemeContext.jsx  guarda o tema escolhido (persiste no localStorage)
-  data/               conteúdo do site (ver seção acima)
-  pages/
-    Home/
-      Home.jsx        junta as seções na ordem em que aparecem
-      sections/
-        Hero/
-        Sobre/
-        Experiencia/
-        Projetos/
-        Contato/
-  prototypes/         os protótipos interativos de cada projeto
-    AgroPainelDemo/
-    IsotrianguloDemo/
-    RegulaFacilDemo/
-  styles/
-    tokens.css        cores, tipografia e espaçamento (os dois temas ficam aqui)
-    globals.css       reset e estilos base
+```bash
+npm run preview
 ```
 
-Cada componente, seção e protótipo tem sua própria pasta com o `.jsx` e o
-`.css` lado a lado — se algo quebrar visualmente, o arquivo de estilo
-correspondente está sempre ao lado do componente que ele estiliza.
+## 👨‍💻 Sobre mim
 
-## Como funciona o "protótipo" de cada projeto
+Sou formado em **Sistemas de Informação** e atuo na área de tecnologia, com experiência em suporte de sistemas e desenvolvimento de aplicações web.
 
-Como o AgroPainel, o RegulaFácil e a vitrine da Isotriângulo estão em
-repositórios privados, cada card de projeto não linka para um site
-hospedado — ele abre um modal (`ProjectModal`) com um componente React
-de verdade, guardado em `src/prototypes/`, que recria de forma
-simplificada e **realmente interativa** uma fatia representativa da
-interface (ex.: o mapa de talhões e o construtor de indicador do
-AgroPainel, o carrinho com prévia de WhatsApp da Isotriângulo, a fila de
-prioridade do RegulaFácil). Isso deixa claro para quem visita que é uma
-demonstração, e não o sistema real.
+Tenho foco principalmente em **desenvolvimento Front-end**, utilizando tecnologias como React, JavaScript, HTML e CSS.
 
-### Adicionando um novo projeto
+Busco constantemente aprimorar meus conhecimentos e desenvolver projetos que unam **tecnologia, usabilidade e boas práticas de desenvolvimento**.
 
-1. Crie uma pasta em `src/prototypes/NomeDoProjetoDemo/` com o `.jsx` e o `.css`.
-2. Importe o componente e adicione um objeto em `src/data/projects.js`.
+## 📫 Contato
 
-Não precisa tocar em `ProjectCard` nem em `ProjectModal` — os dois já
-funcionam para qualquer projeto novo que você adicionar na lista.
+* 💼 LinkedIn: [Eduardo Nunes](https://www.linkedin.com/in/eduardo-nunes-967336229/)
+* 💻 GitHub: [Eduardo91nunes](https://github.com/Eduardo91nunes)
+* 🌐 Portfólio: [Acessar portfólio](https://eduardonunes.netlify.app/)
 
-## Tema dia/noite
+## 📄 Licença
 
-O conceito visual é o de uma caderneta de campo: modo **papel** (claro)
-e modo **painel** (escuro, como um console de monitoramento à noite).
-As cores de cada modo estão em `src/styles/tokens.css`, nas variáveis
-CSS de `:root` e `[data-tema='noite']`.
+Este projeto foi desenvolvido como portfólio pessoal.
 
-## Fontes
+O código está disponível para consulta e estudo, mas os conteúdos, informações pessoais, identidade visual e materiais apresentados pertencem ao autor.
 
-O site usa Fraunces (títulos), Public Sans (corpo) e IBM Plex Mono
-(rótulos técnicos), carregadas via Google Fonts em `src/styles/globals.css`.
-Isso exige conexão com a internet; para uso 100% offline, baixe as fontes
-e sirva localmente.
+---
 
-## Pendências antes de publicar
-
-- [ ] Substituir os textos de exemplo em `src/data/profile.js` e `src/data/experience.js`
-- [ ] Adicionar uma foto real em `public/eduardo.jpg` (ou remover a referência em `profile.js`)
-- [ ] Conferir se os links de contato ainda estão corretos
-- [ ] Rodar `npm run build` e publicar a pasta `dist/` (Netlify, Vercel, GitHub Pages etc.)
+⭐ Se você gostou do projeto, considere deixar uma estrela no repositório!
