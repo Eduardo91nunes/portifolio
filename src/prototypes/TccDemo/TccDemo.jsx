@@ -25,7 +25,7 @@ export default function TccDemo() {
   return (
     <div className="tcc-demo">
       <p className="tcc-demo__legenda">
-        Recorte de demonstração — busca de produtos e controle de entradas e
+        Recorte de demonstração busca de produtos e controle de entradas e
         saídas de estoque em tempo real.
       </p>
 
