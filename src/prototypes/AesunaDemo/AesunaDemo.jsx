@@ -44,7 +44,7 @@ export default function AesunaDemo() {
   return (
     <div className="aesuna-demo">
       <p className="aesuna-demo__legenda">
-        Recorte de demonstração — lançamento de valores do transporte
+        Recorte de demonstração lançamento de valores do transporte
         estudantil e prestação de contas com saldo em tempo real.
       </p>
 
