@@ -14,7 +14,7 @@ export const perfil = {
   disponibilidade: 'Front-end Developer • Aberto a novas oportunidades',
 
   contatos: [
-    { rotulo: 'WhatsApp', valor: 'wa.me/qr/XGHL57Z2EX4YB1', url: 'https://w.app/eduardonunes' },
+    { rotulo: 'WhatsApp', valor: 'https://wa.me/5538998646964?s=p', url: 'https://wa.me/5538998646964?s=p' },
     { rotulo: 'GitHub', valor: '@Eduardo91nunes', url: 'https://github.com/Eduardo91nunes' },
     { rotulo: 'LinkedIn', valor: 'eduardo-nunes', url: 'https://www.linkedin.com/in/eduardo-nunes-967336229/' },
     { rotulo: 'Instagram', valor: '@eduardo_nunes34', url: 'https://www.instagram.com/eduardo_nunes34/' },
